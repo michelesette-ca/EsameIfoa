@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Michele\\Desktop\\EsameIfoa\\EsameIfoaServer\\EsameIfoaServer.csproj": {}
+    "C:\\Users\\DomenicoPace\\Desktop\\EsameIfoa\\EsameIfoaServer\\EsameIfoaServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Michele\\Desktop\\EsameIfoa\\EsameIfoaServer\\EsameIfoaServer.csproj": {
+    "C:\\Users\\DomenicoPace\\Desktop\\EsameIfoa\\EsameIfoaServer\\EsameIfoaServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Michele\\Desktop\\EsameIfoa\\EsameIfoaServer\\EsameIfoaServer.csproj",
+        "projectUniqueName": "C:\\Users\\DomenicoPace\\Desktop\\EsameIfoa\\EsameIfoaServer\\EsameIfoaServer.csproj",
         "projectName": "EsameIfoaServer",
-        "projectPath": "C:\\Users\\Michele\\Desktop\\EsameIfoa\\EsameIfoaServer\\EsameIfoaServer.csproj",
-        "packagesPath": "C:\\Users\\Michele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Michele\\Desktop\\EsameIfoa\\EsameIfoaServer\\obj\\",
+        "projectPath": "C:\\Users\\DomenicoPace\\Desktop\\EsameIfoa\\EsameIfoaServer\\EsameIfoaServer.csproj",
+        "packagesPath": "C:\\Users\\DomenicoPace\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DomenicoPace\\Desktop\\EsameIfoa\\EsameIfoaServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Michele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DomenicoPace\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,8 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://devops.codearchitects.com:444/Code%20Architects/_packaging/ca-esp7-nuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -51,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.6, )"
@@ -89,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

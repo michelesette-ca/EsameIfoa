@@ -1,5 +1,10 @@
 using EsameIfoaServer.Domain.Model;
+using EsameIfoaServer.Domain.Repositories;
+using EsameIfoaServer.Domain.Services;
 using EsameIfoaServer.Infrastructure.Data;
+using EsameIfoaServer.Infrastructure.Repositories;
+using EsameIfoaServer.Infrastructure.Services;
+using EsameIfoaServer.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
@@ -8,7 +13,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -22,6 +26,12 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader();
       });
 });
+
+builder.Services.AddScoped<IContactRepository, ContactRepository>();
+
+builder.Services.AddScoped<IContactService, ContactService>();
+builder.Services.AddAutoMapper(typeof(ContactProfile));
+
 
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer("Server=localhost;Database=EsameIfoa;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"));
@@ -64,7 +74,7 @@ using (var scope = app.Services.CreateScope())
     },
     new Contact
     {
-      Id = 1,
+      Id = 0,
       FullName = "Giulio Verdi",
       Email = "giulio@example.com",
       Phone = "789456123",
