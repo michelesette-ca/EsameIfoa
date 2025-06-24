@@ -1,27 +1,32 @@
 <div class="container py-5">
-  <h1 class="text-center mb-4">Contacts List</h1>
+  <h1 class="text-center mb-5 fw-bold">Contacts List</h1>
 
   <div class="table-responsive d-flex justify-content-center">
-    <table class="table table-bordered table-hover text-center bg-white shadow rounded w-auto">
+    <table class="table table-bordered table-hover table-striped text-center bg-white shadow rounded-4 overflow-hidden w-auto">
       <thead class="table-primary">
         <tr>
-          <th>Full Name</th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>Department</th>
+          <th class="px-4 py-3">Full Name</th>
+          <th class="px-4 py-3">Email</th>
+          <th class="px-4 py-3">Phone</th>
+          <th class="px-4 py-3">Department</th>
         </tr>
       </thead>
       <tbody>
         @for (contact of contacts; track contact.id) {
           <tr>
-            <td>{{ contact.fullName }}</td>
-            <td>{{ contact.email }}</td>
-            <td>{{ contact.phone }}</td>
-            <td>{{ contact.department }}</td>
+            <td class="align-middle px-4 py-2">{{ contact.fullName }}</td>
+            <td class="align-middle px-4 py-2">{{ contact.email }}</td>
+            <td class="align-middle px-4 py-2">{{ contact.phone }}</td>
+            <td class="align-middle px-4 py-2">{{ contact.department }}</td>
           </tr>
         }
       </tbody>
     </table>
   </div>
-  <button class="btn btn-primary mt-4" [routerLink]="['/form-contact']">Add New Contact</button>
+
+  <div class="text-center mt-4">
+    <button class="btn btn-primary rounded-pill px-5 py-2 fs-5 shadow-sm" [routerLink]="['/form-contact']">
+      Add New Contact
+    </button>
+  </div>
 </div>

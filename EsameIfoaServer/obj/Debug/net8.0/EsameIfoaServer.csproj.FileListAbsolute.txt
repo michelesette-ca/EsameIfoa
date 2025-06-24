@@ -513,3 +513,4 @@ C:\Users\utente\Desktop\EsameIfoa\EsameIfoaServer\obj\Debug\net8.0\refint\EsameI
 C:\Users\utente\Desktop\EsameIfoa\EsameIfoaServer\obj\Debug\net8.0\EsameIfoaServer.pdb
 C:\Users\utente\Desktop\EsameIfoa\EsameIfoaServer\obj\Debug\net8.0\EsameIfoaServer.genruntimeconfig.cache
 C:\Users\utente\Desktop\EsameIfoa\EsameIfoaServer\obj\Debug\net8.0\ref\EsameIfoaServer.dll
+C:\Users\Michele\Desktop\EsameIfoa\EsameIfoaServer\bin\Debug\net8.0\AutoMapper.dll

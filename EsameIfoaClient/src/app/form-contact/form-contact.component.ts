@@ -27,31 +27,15 @@ export class FormContactComponent implements OnInit {
       department: ['', Validators.required],
     });
   }
-  onSubmit(): void {
-  if (this.formContact.valid) {
-    this._contactsService.addContact(this.formContact.value).subscribe({
-      next: (data) => {
-        console.log('Contact added successfully:', data);
-        this.formContact.reset();
-      },
-      error: (err) => {
-        console.error('Error adding contact:', err);
 
-        // Se ci sono errori di validazione nel body, li stampiamo tutti
-        if (err.error && err.error.errors) {
-          console.group('Validation Errors');
-          for (const key in err.error.errors) {
-            if (err.error.errors.hasOwnProperty(key)) {
-              console.error(`${key}:`, err.error.errors[key]);
-            }
-          }
-          console.groupEnd();
-        }
-      }
-    });
-  } else {
-    console.warn('Form is invalid');
+  public onSubmit(): void {
+    if (this.formContact.valid) {
+      this._contactsService.addContact(this.formContact.value).subscribe(data => {
+        this.contact = data;
+        this.formContact.reset();
+        alert('Contact added successfully!');
+      });
+    }
   }
-}
 
 }
