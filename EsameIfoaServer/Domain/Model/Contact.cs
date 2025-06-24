@@ -4,7 +4,7 @@ namespace EsameIfoaServer.Domain.Model;
 
 public class Contact
 {
-  public required int Id { get; set; }
+  public int Id { get; set; }
   [MaxLength(100)]
   public required string FullName { get; set; }
   public required string Email { get; set; }
