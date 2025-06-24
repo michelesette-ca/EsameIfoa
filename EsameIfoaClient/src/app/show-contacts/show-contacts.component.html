@@ -1,0 +1,27 @@
+<div class="container py-5">
+  <h1 class="text-center mb-4">Contacts List</h1>
+
+  <div class="table-responsive d-flex justify-content-center">
+    <table class="table table-bordered table-hover text-center bg-white shadow rounded w-auto">
+      <thead class="table-primary">
+        <tr>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (contact of contacts; track contact.id) {
+          <tr>
+            <td>{{ contact.fullName }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.phone }}</td>
+            <td>{{ contact.department }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <button class="btn btn-primary mt-4" [routerLink]="['/form-contact']">Add New Contact</button>
+</div>
