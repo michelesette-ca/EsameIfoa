@@ -1,0 +1,6 @@
+@EsameIfoaServer_HostAddress = http://localhost:5072
+
+GET {{EsameIfoaServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

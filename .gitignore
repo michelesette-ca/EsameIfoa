@@ -1,0 +1,62 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+**/dist
+**/tmp
+**/out-tsc
+**/bazel-out
+
+# Node
+**/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+**/.vs/
+
+# Visual Studio Code
+client/.vscode/*
+!client/.vscode/settings.json
+!client/.vscode/tasks.json
+!client/.vscode/launch.json
+!client/.vscode/extensions.json
+client/.history/*
+
+# Miscellaneous
+client/.angular/cache
+client/.sass-cache/
+client/connect.lock
+client/coverage
+client/libpeerconnection.log
+client/testem.log
+client/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+
+# Server files
+/server/.vs
+/server/**/.vs
+/server/**/bin
+/server/**/obj
+/AuthServiceUnitTest
+/AuthServiceUnitTest/obj
+/AuthServiceUnitTest/bin
+
+
+# Azurite (Azure Storage Emulator)
+**/azurite_data/
+**/azurite_debug.log
+Client/azurite_debug.log
+
+
