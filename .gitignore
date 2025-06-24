@@ -22,21 +22,21 @@ yarn-error.log
 **/.vs/
 
 # Visual Studio Code
-client/.vscode/*
-!client/.vscode/settings.json
-!client/.vscode/tasks.json
-!client/.vscode/launch.json
-!client/.vscode/extensions.json
-client/.history/*
+EsameIfoaClient/.vscode/*
+!EsameIfoaClient/.vscode/settings.json
+!EsameIfoaClient/.vscode/tasks.json
+!EsameIfoaClient/.vscode/launch.json
+!EsameIfoaClient/.vscode/extensions.json
+EsameIfoaClient/.history/*
 
 # Miscellaneous
-client/.angular/cache
-client/.sass-cache/
-client/connect.lock
-client/coverage
-client/libpeerconnection.log
-client/testem.log
-client/typings
+EsameIfoaClient/.angular/cache
+EsameIfoaClient/.sass-cache/
+EsameIfoaClient/connect.lock
+EsameIfoaClient/coverage
+EsameIfoaClient/libpeerconnection.log
+EsameIfoaClient/testem.log
+EsameIfoaClient/typings
 
 # System files
 .DS_Store
@@ -45,18 +45,12 @@ Thumbs.db
 
 
 # Server files
-/server/.vs
-/server/**/.vs
-/server/**/bin
-/server/**/obj
+/EsameIfoaServer/.vs
+/EsameIfoaServer/**/.vs
+/EsameIfoaServer/**/bin
+/EsameIfoaServer/**/obj
 /AuthServiceUnitTest
 /AuthServiceUnitTest/obj
 /AuthServiceUnitTest/bin
-
-
-# Azurite (Azure Storage Emulator)
-**/azurite_data/
-**/azurite_debug.log
-Client/azurite_debug.log
 
 
